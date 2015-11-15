@@ -24,12 +24,22 @@
       width: 125%;
     }
 
+    .reveal .sub-header {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 0.15em;
+    }
+
     .reveal .me {
       margin-top: 42px;
     }
 
     .reveal ul ul {
       font-size: 0.8em;
+    }
+
+    .reveal .reference {
+      font-size: 0.5em;
     }
 
     #rasterization {
@@ -49,7 +59,7 @@
       <section>
         <h1>WebGL in Production</h1>
         <h2>Content, Rendering and Integration in the BioDigital Human</h2>
-        <p>Tarek Sherif</p>
+        <p class="me">Tarek Sherif</p>
         <p>BioDigital</p>
       </section>
 
@@ -93,64 +103,48 @@
 
       <section>
         <h3>The BioDigital Human</h3>
+        <div class="sub-header">Key Clients</div>
+        <ul>
+          <li>Medical device manufacturers</li>
+          <li>Pharmaceutical</li>
+          <li>Educational</li>
+          <li>Medical students</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Why WebGL?</h3>
+          <div class="sub-header">Pros</div>
           <ul>
-            <li>
-              Key clients 
-              <ul>
-                <li>Medical device manufacturers</li>
-                <li>Pharmaceutical</li>
-                <li>Educational</li>
-                <li>Medical students</li>
-              </ul>
-            </li>
+            <li>It's everywhere!</li>
+            <li>Use HTML/CSS/JavaScript for easy UI</li>
+            <li>Integrate into client web sites</li>
+            <li>Leverage existing web services</li>
+            <li>(Relatively) easy distribution</li>
+            <li>(Relatively) easy deployment of updates</li>
+          </ul>
+      </section>
+
+      <section>
+        <h3>In a nutshell...</h3>
+          <ul>
+            <li>Leverage the entire infrastructure of the Web as a platform</li>
           </ul>
       </section>
 
       <section>
         <h3>Why WebGL?</h3>
-        <ul>
-          <li>
-            Pros:
-            <ul>
-              <li>It's everywhere!</li>
-              <li>Use HTML/CSS/JavaScript for easy UI</li>
-              <li>Integrate into client web sites</li>
-              <li>Leverage existing web services</li>
-              <li>(Relatively) easy distribution</li>
-              <li>(Relatively) easy to deploy updates</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Why WebGL?</h3>
-        <ul>
-          <li>
-            In a nutshell:
-            <ul>
-              <li>Leverage the entire infrastructure of the Web as a platform</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Why WebGL?</h3>
-        <ul>
-          <li>
-            Cons:
-            <ul>
-              <li>
-                Web UX expectations
-                <ul>
-                  <li>It should just work</li>
-                  <li>It should be fast</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <div class="sub-header">Cons</div>
+          <ul>
+            <li>
+              Web UX expectations
+              <ul>
+                <li>It should be fast</li>
+                <li>It should be easy</li>
+                <li>It should just work</li>
+              </ul>
+            </li>
+          </ul>
         <div>
           <img src="img/louis.jpg">
           <!-- Original image: http://s556.photobucket.com/user/wwm/media/louie.jpg.html -->
@@ -159,17 +153,13 @@
 
       <section>
         <h3>Why WebGL?</h3>
+        <div class="sub-header">Cons</div>
         <ul>
           <li>
-            Cons:
+            JavaScript!!!
             <ul>
-              <li>
-                JavaScript!!!
-                <ul>
-                  <li>Memory management is hard</li>
-                  <li>Common JS patterns are bad for performance</li>  
-                </ul>
-              </li>
+              <li>Memory management is hard</li>
+              <li>Common JS patterns are bad for performance</li>  
             </ul>
           </li>
         </ul>
@@ -188,14 +178,13 @@
 
       <section>
         <h3>WebGL in Production</h3>
-        <ul>
-          <li>The pipeline</li>
+        <div class="sub-header">The BioDigital Production Pipeline</div>
         </ul>
         <img src="img/pipeline.png">
       </section>
 
       <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
           <li>Artists create models and animate them</li>
         </ul>
@@ -203,7 +192,7 @@
       </section>
 
        <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
           <li>
             Export tool converts modeling format to runtime format that the WebGL engine can use efficiently
@@ -218,7 +207,7 @@
       </section>
 
       <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
           <li>WebGL!!!</li>
         </ul>
@@ -226,7 +215,7 @@
       </section>
 
       <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
           <li>Deploy engine and content to our servers making them available to everyone</li>
         </ul>
@@ -234,39 +223,35 @@
       </section>
 
       <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
-          <li>Embed an iFrame with Human content in your page</li>
+          <li>Client can embed an iFrame with Human content in their page</li>
         </ul>
         <img src="img/pipeline-integrate.png">
       </section>
 
       <section>
-        <h3>WebGL in Production</h3>
+        <h3>The BioDigital Production Pipeline</h3>
         <ul>
-          <li>Manipulate scene in the iFrame through a JavaScript API</li>
+          <li>Client manipulates scene in the iFrame through a JavaScript API</li>
         </ul>
         <img src="img/pipeline-api.png">
       </section>
 
       <section>
         <h3>WebGL in Production</h3>
+        <div class="sub-header">Key Challenges</div>
         <ul>
+          <li>Content must be downloaded so its size should be minimized</li>
           <li>
-            Key challenges:
+            Running ubiquitously means dealing with limitations of low-end devices:
             <ul>
-              <li>Content must be downloaded so its size should be limited</li>
-              <li>
-                Running ubiquitously means dealing with limitations of low-end devices:
-                <ul>
-                  <li>Memory and GPU limitations</li>
-                  <li>Amplifies importance of optimization</li>
-                  <li>But don't want to sacrifice quality on capable devices!</li>
-                </ul>
-              </li>
-              <li>Making 3D navigation and concepts approachable to a general audience</li>
+              <li>Memory and GPU limitations</li>
+              <li>Amplifies importance of optimization</li>
+              <li>But don't want to sacrifice quality on capable devices!</li>
             </ul>
           </li>
+          <li>Making 3D navigation and concepts approachable to a general audience</li>
         </ul>
       </section>
 
@@ -326,26 +311,23 @@
 
       <section>
         <h3>Content Challenges</h3>
+        <div class="sub-header">SIZE!</div>
         <ul>
-          <li>
-            SIZE!
-            <ul>
-              <li>Artists want it beautiful: big textures, detailed geometry</li>
-              <li>Engineers want it to not crash on an iPhone</li>
-              <li>Tension between anatomical detail and application stability</li>
-            </ul>
-          </li>
-        </ul> 
+          <li>Artists want it beautiful: big textures, detailed geometry</li>
+          <li>Engineers want it to not crash on an iPhone</li>
+          <li>Tension between anatomical detail and application stability</li>
+        </ul>
       </section>
 
       <section>
         <h3>Content Challenges</h3>
+        <div class="sub-header">Pipeline Issues</div>
         <ul>
+          <li>Artists (mostly) don't write code</li>
           <li>
-            Pipeline issues
+            Have to map Maya properties or structures to GL variables and GLSL code
             <ul>
-              <li>Artists (mostly) don't write code</li>
-              <li>Have to map Maya properties or structures to GL variables and GLSL code</li>
+              <li>Authoring versus runtime representations of data</li>
             </ul>
           </li>
         </ul> 
@@ -364,21 +346,17 @@
 
       <section>
         <h3>Example: Maya Ramp Node for Fresnel Effects</h3>
+        <div class="sub-header">Maya Ramp Node</div>
         <ul>
-          <li>Maya ramp node:</li>
-          <ul>
-            <li>Arbitrary gradient with unlimited stops</li>
-            <li>Color inputs can be textures</li>
-            <li>Interpolation factor can be anything</li>
-          </ul>
-        </ul> 
+          <li>Arbitrary gradient with unlimited stops</li>
+          <li>Color inputs can be textures</li>
+          <li>Interpolation factor can be anything</li>
+        </ul>
       </section>
 
       <section>
         <h3>Example: Maya Ramp Node for Fresnel Effects</h3>
-        <ul>
-          <li>Standard Fresnel equation</li>
-        </ul> 
+        <div class="sub-header">Standard Fresnel Equation</div>
         <pre>
           <code>
             float fresnel(eyeVec, worldNormal, color1, color2, bias, scale, power) {
@@ -388,7 +366,7 @@
               return mix(color1, color2, f);
             }
           </code>
-        </ul>
+        </pre>
       </section>
 
       <section>
@@ -413,9 +391,7 @@
 
       <section>
         <h3>Our Solution</h3>
-        <ul>
-          <li>Maya ramp node</li>
-        </ul>
+        <div>BioDigital Fresnel Node for Maya</div>
         <div>
           <img src="img/fresnel-graph.jpg">
           <img src="img/fresnel-ramp.jpg">
@@ -424,9 +400,7 @@
 
       <section>
         <h3>Our Solution</h3>
-        <ul>
-          <li>SceneJS Fresnel equation</li>
-        </ul> 
+        <div class="sub-header">SceneJS Fresnel Equation</div>
         <pre>
           <code>
   float fresnel(vec3 viewDirection, vec3 worldNormal, float edgeBias, float centerBias, float power) {
@@ -445,7 +419,7 @@
             Navigating anatomical content is difficult
             <ul>
               <li>Deeply nested</li>
-              <li>Hierarchical (did the user click on arm or hand or finger?)</li>
+              <li>Hierarchical</li>
             </ul>
           </li>
         </ul>
@@ -480,13 +454,13 @@
           <li>
             Some things are simple:
             <ul>
-              <li>Highlight object: pick object, blend with highlight color in the fragment shader</li>
+              <li>Remove object: Disable its branch in the scene graph</li>
             </ul> 
           </li>
           <li>
             Some things are less so:
             <ul>
-              <li>Annotations: map 3D point to 2D canvas position, manipulate DOM elements, check occlusion, follow morphing geometry</li>
+              <li>Annotations: Map 3D point to 2D canvas position, manipulate DOM elements, check occlusion, follow morphing geometry</li>
             </ul> 
           </li>
         </ul>
@@ -494,24 +468,20 @@
 
       <section>
         <h3>Rendering Challenges</h3>
+        <div class="sub-header">MOBILE!</div>
         <ul>
+          <li>Rendering performance and memory can be severely limited on mobile devices</li>
           <li>
-            Mobile!
+            Possible to query some properties:
             <ul>
-              <li>Rendering performance and memory can be severely limited on mobile devices</li>
-              <li>
-                Possible to query some properties:
-                <ul>
-                  <li>Variable limits (uniforms, varyings, texture units)</li>
-                  <li>Shader precision</li>
-                </ul>
-              </li>
-              <li>
-                Not others:
-                <ul>
-                  <li>GPU memory</li>
-                </ul>
-              </li>
+              <li>GL Variable limits (uniforms, varyings, texture units)</li>
+              <li>Shader precision</li>
+            </ul>
+          </li>
+          <li>
+            Not others:
+            <ul>
+              <li>GPU memory</li>
             </ul>
           </li>
         </ul>
@@ -519,25 +489,22 @@
 
       <section>
         <h3>Rendering Challenges</h3>
-        <ul>
-          <li>ARGGGH... APPLE!!!</li>
-        </ul>
+        <div class="sub-header">ARGGGH... APPLE!!!</div>
         <div>
           <img src="img/ios-limits.png">
-          <!-- Source: http://codeflow.org/entries/2014/jun/08/some-issues-with-apples-ios-webgl-implementation/ -->
+          <!--  -->
+        </div>
+        <div class="reference">
+          Source: <a href="http://codeflow.org/entries/2014/jun/08/some-issues-with-apples-ios-webgl-implementation/">http://codeflow.org/entries/2014/jun/08/some-issues-with-apples-ios-webgl-implementation/</a>
         </div>
       </section>
 
       <section>
         <h3>Working with mobile</h3>
+        <div class="sub-header">Shader Precision</div>
         <ul>
-          <li>
-            Shader Precision
-            <ul>
-              <li>On desktop <b>mediump</b> and <b>highp</b> tend to be the same</li>
-              <li>On mobile, not so</li>
-            </ul>
-          </li>
+          <li>On desktop <b>mediump</b> and <b>highp</b> tend to be the same</li>
+          <li>On mobile, not so</li>
         </ul>
       </section>
 
@@ -557,11 +524,7 @@
 
       <section>
         <h3>Shader Precision</h3>
-        <ul>
-          <li>
-            Result
-          </li>
-        </ul>
+        <div class="sub-header">Result</div>
         <div>
           <img src="img/iosgpubug.png">
         </div>
@@ -569,19 +532,15 @@
 
       <section>
         <h3>Working with mobile</h3>
+        <div class="sub-header">GL Variable Limits</div>
         <ul>
-          <li>
-            Variable limits
-            <ul>
-              <li>Hardest limit to deal with so far is the limit on varyings (8!)</li>
-              <li>Limit on texture units (8 again!) uncovered a bug in SceneJS bookkeeping</li>
-            </ul>
-          </li>
+          <li>Hardest limit to deal with so far is the limit on varyings (8!)</li>
+          <li>Limit on texture units (8 again!) uncovered a bug in SceneJS bookkeeping</li>
         </ul>
       </section>
 
       <section>
-        <h3>Variable limits: Varyings</h3>
+        <h3>GL Variable limits: Varyings</h3>
         <ul>
           <li>
             SceneJS used to calculate the light vector and distance for each light in the vertex shader, pass to fragment shader in a varying
@@ -600,10 +559,10 @@
       </section>
 
       <section>
-        <h3>Variable limits: Texture units</h3>
+        <h3>GL Variable limits: Texture units</h3>
         <ul>
           <li>
-            SceneJS used to cycle through texture units for binding, assuming there would always be at least 10
+            SceneJS used to cycle through texture units for binding assuming there would always be at least 10
           </li>
         </ul>
         <pre>
@@ -617,9 +576,7 @@
 
       <section>
         <h3>Solution</h3>
-        <ul>
-          <li>Know the client!</li>
-        </ul>
+        <div class="sub-header">Know the Client!</div>
         <pre>
           <code>
         SceneJS.WEBGL_INFO.MAX_VARYING_VECTORS = gl.getParameter(gl.MAX_VARYING_VECTORS);
@@ -638,9 +595,7 @@
 
       <section>
         <h3>Solution</h3>
-        <ul>
-          <li>Use that knowledge!</li>
-        </ul>
+        <div class="sub-header">Use That Knowledge!</div>
         <pre>
           <code>
         frameCtx.textureUnit = (frameCtx.textureUnit + 1) % SceneJS.WEBGL_INFO.MAX_TEXTURE_UNITS;
@@ -716,21 +671,24 @@
       <section>
         <h3>API Challenges</h3>
         <ul>
-          <li>Communication!
-            <ul>
-              <li>Documentation</li>
-              <li>Tutorials</li>
-              <li>Support</li>
-            </ul>
-          </li>
           <li>
-            Want to make everything we've discussed approachable to the average web developer
+            Want the average web developer to understand it all
             <ul>
-              <li>3D navigation concepts</li>
+              <li>3D terminology and concepts</li>
+              <li>3D navigation</li>
               <li>Anatomical concepts</li>
               <li>Architecture of the Human</li>
             </ul>
           </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Solution</h3>
+        <ul>
+          <li>Documentation</li>
+          <li>Tutorials</li>
+          <li>Support</li>
         </ul>
       </section>
 
